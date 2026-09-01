@@ -1,0 +1,12 @@
+.sticky_table thead th {
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* tbody内のセルより手前に表示する */
+  z-index: 1;
+}
+::placeholder {
+   font-size: 0.75em;
+   color: #dddddd;
+}
