@@ -2,11 +2,15 @@
 @section('content')
 <script src="https://cdn.jsdelivr.net/gh/osamutake/japanese-holidays-js@v1.0.10/lib/japanese-holidays.min.js"></script>
 <script>
+
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': '{{ csrf_token() }}'
         }
     });
+
+    const asset="{{asset('calendar')}}";
+    
     
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
@@ -50,7 +54,7 @@
                             +'-'+(new Date(dateInfo.endStr).getMonth()+1).toString()
                             +'-'+new Date(dateInfo.endStr).getDate();
                 $.ajax({
-                    url: 'holiday/get', 
+                    url: asset+'/holiday/get', 
                     type: "get", 
                     dataType: 'json',
                     contentType: "application/x-www-form-urlencoded; charset=UTF-8",
@@ -77,18 +81,18 @@
       const isOpen = (window.outerWidth - window.innerWidth) > threshold;
       if (isOpen) {
         const devUrl = "{{ url('devlog') }}"; // assetではなくurlにす
-            $.ajax({
-                url: devUrl,
-                type: "post",
-                dataType: 'json',
-                contentType : 'application/json; charset=UTF-8',
-            }).done((data) => {
-                console.log('成功', data);
-            }).fail((data) => {
-                console.log('エラー', data);
-            }).always((data) => {
-                console.log('完了', data);
-            });
+            // $.ajax({
+            //     url: devUrl,
+            //     type: "post",
+            //     dataType: 'json',
+            //     contentType : 'application/json; charset=UTF-8',
+            // }).done((data) => {
+            //     console.log('成功', data);
+            // }).fail((data) => {
+            //     console.log('エラー', data);
+            // }).always((data) => {
+            //     console.log('完了', data);
+            // });
     }
     }
     setInterval(checkDevToolsByWindowWidth, 12000);

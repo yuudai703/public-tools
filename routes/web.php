@@ -18,7 +18,7 @@ use App\Http\Controllers\DailyreportsKanriController;
 */
 
 Route::get('/', function () {
-    return redirect('/mitumoriSetubiKani/index/1');
+    return redirect('/mitumoriSetubiKani/index/1184');
 });
 
 //mitumoriKaniController

@@ -29,7 +29,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>{!! link_to_route('scheduleIndex', 'スケジュール', [], ['class' => 'dropdown-item']) !!}</li>
-                                <li>{!! link_to_route('calendar', '休日登録', [], ['class' => 'dropdown-item']) !!}</li>
+                                <li>{!! link_to_route('calendar', '休日登録', ["id"=>1], ['class' => 'dropdown-item']) !!}</li>
                             </ul>
                         </li>
                     @else
