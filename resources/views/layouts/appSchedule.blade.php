@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>電子承認システム -  {{Config::get('global.company')}}</title>
+        <meta name="robots" content="noindex">
         
        
         
