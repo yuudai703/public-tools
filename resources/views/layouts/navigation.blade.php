@@ -148,7 +148,7 @@
 
                <span class="flex-1 ms-3 whitespace-nowrap openAni">開発者用資材管理</span>
             </a>
-         </li>
+         </li>--}}
          
         <li>
             <form method="POST" action="{{ route('logout') }}">
@@ -164,7 +164,7 @@
                     <span class="flex-1 ms-3 whitespace-nowrap openAni">Log Out</span>
                 </submit>
             </form>
-         </li> --}}
+         </li> 
       </ul>
    </div>
 </div>
