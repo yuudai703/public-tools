@@ -32,7 +32,7 @@
                 </a>
             </div>
             <h1 class="text-xl text-center items-center tlt text-gray-800" style=" font-family:serif;">
-                Welcome to Ｍ-System made in ＫＤＫ
+                Welcome to my portfolio 
             </h1>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
