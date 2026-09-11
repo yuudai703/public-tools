@@ -16,7 +16,7 @@ use App\Http\Controllers\DailyreportsKanriController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::middleware('auth')->group(function () {
 Route::get('/', function () {
     return redirect('/mitumoriSetubiKani/index/1184');
 });
@@ -71,3 +71,6 @@ Route::get('/', function () {
     Route::post('calendar/holiday',[DailyreportsKanriController::class,'holiday']);
     Route::delete('calendar/holiday/delete',[DailyreportsKanriController::class,'holidayDelete']);
     Route::get('calendar/holiday/get',[DailyreportsKanriController::class,'holidayGet']);
+});
+
+require __DIR__.'/auth.php';
