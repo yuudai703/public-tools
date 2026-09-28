@@ -1,7 +1,7 @@
 # publictools
 Laravelを使用したポートフォリオです。
-Email：admin@nagano.co.jp
-Password：19971215
+- Email：admin@nagano.co.jp
+- Password：19971215
 
 ## scheduleデモサイト
 https://xs196318.xsrv.jp/scheduleDayPailot
