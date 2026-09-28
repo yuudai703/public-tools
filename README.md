@@ -1,5 +1,5 @@
 # publictools
-Laravelを使用したポートフォリオです。
+Laravelを使用したポートフォリオです。<br>下記の情報でログインできます。
 - Email：admin@nagano.co.jp
 - Password：19971215
 
